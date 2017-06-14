@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Calculate</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+        </style>
+    </head>
+    <body>
+		<h1>Calculate</h1><br>
+		Numbers: <input type="text" value="" name="invoer" id="fill"><br><br>
+		Operation:
+		<select name="select" id="select">
+		  <option value="sum">+</option>
+            <option value="substract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+		</select><br><br>
+		<button onclick="count()">calculate</button>
+		<br><br>
+		
+		<div id="antwoord">
+			<div id="answer"> Resultaat: </div>
+		</div>
+		<h2>Test Examples</h2>           
+    <pre>
+    Numbers:    30, 2, 5
+    Operation:  +
+    Result:     37        ( = 30 + 2 + 5 )
+    
+    Numbers:    30, 2, 5
+    Operation:  -
+    Result:     23        ( = 30 - 2 - 5 )
+    
+    Numbers:    30, 2, 5
+    Operation:  *
+    Result:     300       ( = 30 * 2 * 5 )
+    
+    Numbers:    30, 2, 5
+    Operation:  /
+    Result:     3         ( = 30 / 2 / 5 )
+    </pre>
+			
+ 		<script src="js/script.js"></script> 
+		
+    </body>
+</html>

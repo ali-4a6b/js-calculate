@@ -1,0 +1,13 @@
+html, body      {
+    height: 95%;
+    width: 95%;
+    }
+
+			
+#antwoord       {
+    width: 90%;
+    height: 50;
+    background: black;
+    font-size: 2rem;
+    color: white;
+    }
