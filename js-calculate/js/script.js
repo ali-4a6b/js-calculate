@@ -1,15 +1,14 @@
-    function count() {
+    function calculate() {
         
-        var arr = document.getElementById('fill').value.split(",");
+        var arr = document.getElementById('totaal').value.split(",");
         var operations = {
         '+' : arr.reduce((a, b) => parseFloat(a) + parseFloat(b)),
-        '-' : arr.reduce((a, b) => parseFloat(a) - parseFloat(b)),
-        '*' : arr.reduce((a, b) => parseFloat(a) * parseFloat(b)),
-        '/' : arr.reduce((a, b) => parseFloat(a) / parseFloat(b))
+        '-' : arr.reduce((c, d) => parseFloat(c) - parseFloat(d)),
+        '*' : arr.reduce((e, f) => parseFloat(e) * parseFloat(f)),
+        '/' : arr.reduce((g, h) => parseFloat(g) / parseFloat(h))
 			     }   
         
-			   var answer = operations[document.getElementById('select').selectedOptions[0].text];
+			   var antwoord = operations[document.getElementById('tt').selectedOptions[0].text];
 
-			   document.getElementById('answer').innerHTML = "Resultaat: " + answer;
+			   document.getElementById('antwoord').innerHTML = "resultaat: " + antwoord;
     }
-// gemaakt met hulp
